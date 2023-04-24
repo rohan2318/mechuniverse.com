@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inconsolata', monospace;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    /* background-image:url(images/web2.jpg); */
+    background-image: url(images/web3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    width: 50px;
+    height: 10vh;
+    border: 2px solid blue;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+    justify-content: flex-end;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    color: white;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.nav-links ul li a:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    left: 0;
+    height: 2px;
+    background-color: rgb(255, 47, 133);
+    bottom: 0px;
+    transition: 0.3s;
+}
+.nav-links ul li a:hover:after{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 60px;
+    animation: blink 7s linear infinite;
+    
+}
+@keyframes blink{
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+}
+.row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.main-content{
+    /* border: 2px solid green; */
+    margin-left: 15%;
+    /* margin-top: 5%; */
+    width:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lab-text{
+    text-align: center;
+    /* border: 1px solid orange; */
+    margin-right: 2%;
+    margin-top: 3%;
+    width: 750px;
+}
+.second-row{
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+.software-content{
+    /* margin-top: 5%; */
+    margin-left: 3%;
+    /* border: 2px solid green; */
+    width:80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.lab-img{
+    filter: drop-shadow(10px 10px 10px grey);
+}
+.soft-img{
+    /* border: 1px solid blue; */
+    margin-left: 3%;
+    margin-right: 5%;
+    filter: drop-shadow(10px 10px 10px grey);
+}
+.soft-text{
+    /* border: 1px solid orange; */
+    text-align: center;
+    width: 750px;
+}
+.main-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px 15px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.main-btn:hover{
+    border: 1px solid orangered;
+    background: orangered;
+    transition: 1s;
+}
+.explore-btn{
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.explore-btn:hover{
+    border: 1px solid orangered;
+    background: orangered;
+    transition: 1s;
+}
+.download-btn{
+    margin-top: 2%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 8px 15px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.download-btn:hover{
+    border: 1px solid orangered;
+    background: orangered;
+    transition: 1s;
+}
+.footer{
+    background-image: url(images/web3.jpg);
+    /* border: 2px solid red; */
+    /* margin-top: 2%; */
+}
+.footer-row{
+    /* margin-top: 2%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    /* border: 1px solid green; */
+}
+.footer-rights{
+    /* border: 1px solid red; */
+    margin-left: -5%;
+    margin-top: 2%;
+    color: white;
+    text-align: center;
+}
+.footer-call{
+    /* border: 1px solid red; */
+    color: white;
+    text-align: center;
+    
+}
+.footer-mail{
+    /* border: 1px solid red; */
+    color: white;
+    text-align: center;
+    margin-right: 5%;
+}
+
+.footer-logo{
+    margin-left: 3%;
+    margin-top: 2%;
+    /* border: 1px solid yellow; */
+}
+.middle-content{
+    background-image: url(images/bg2.jpg)
+}
+
+
+/* MY COURSES PAGE */
+
+.sub-header{
+    min-height: 35vh;
+    width: 100%;
+    /* background-image:url(images/web2.jpg); */
+    background-image: url(images/web3.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.my-courses{
+    /* border: 1px solid green; */
+    width: 90%;
+    color: white;
+    position: absolute;
+    margin-top: 5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.courses{
+    /* border: 1px solid green; */
+    padding-top: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.course-one{
+    border-radius: 10px;
+    padding: 20px 5px;
+    margin-bottom: 2%;
+    box-sizing: border-box;
+    filter: drop-shadow(6px 6px 8px grey);
+    /* border: 1px solid orange; */
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+}
+.open-btn{
+    margin-top: 3%;
+    margin-left: 33%;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 6px 10px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.open-btn:hover{
+    border: 1px solid orangered;
+    background: orangered;
+    transition: 1s;
+}
+
+/* STRENGTH OF MATERIAL PAGE */
+.lab-one{
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    margin-bottom: 2%;
+}
+.lab-text{
+/* border: 1px solid orange; */
+margin-left: 2%;
+width: 700px;
+}
+.lab-video{
+/* border: 1px solid red; */
+margin-right: 2%;
+margin-top: 3%;
+
+}
+.description{
+    text-align: start;
+
+}
+.description-one{
+    text-align: start;
+    font-weight: bold;
+}
+.visit-btn{
+    margin-top: 0%;
+    margin-left: 0%;
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border: 1px solid black;
+    padding: 6px 10px;
+    font-size: 16px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    
+}
+.visit-btn:hover{
+    border: 1px solid orangered;
+    background: orangered;
+    transition: 1s;
+}
+
+/* ABOUT PAGE */
+
+.main-about{
+    margin-top: 5%;
+    display: flex;
+    /* border: 1px solid greenyellow; */
+}
+.about{
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+    display: flex;
+    color: white;
+    text-align: justify;
+    font-size: larger;
+    
+}
+.about-img{
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 50%;
+    margin-left: 5%;
+    filter: drop-shadow(20px 15px 20px black);
+}
+
+/* CONTACT US PAGE */
+.get-in-touch h1{
+    margin-left: 38%;
+    font-size: 45px;
+    color: white;
+}
+.get-in-touch h3{
+    color: white;
+}
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    /* border: 1px solid green; */
+}
+
+.phone{
+    /* border: 1px solid yellow; */
+    text-align: center;
+    width: 350px;
+    height: 270px;
+    background-image: url(images/greybg.jpg); 
+    filter: drop-shadow(20px 15px 20px black);
+    justify-content: center;
+    align-items: center;
+}
+.contact-mail{
+    width: 350px;
+    height: 270px;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    font-size: larger;
+    background-image: url(images/greybg.jpg); 
+    text-align: center;
+    filter: drop-shadow(20px 15px 20px black);
+
+}
+.bold {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.bolder{
+    text-align: center;
+    color:rgb(250, 2, 2);
+    font-size:large;
+    font-weight:bold;
+}
